@@ -46,7 +46,7 @@ async function saveTasks(tasks) {
 // Получить все задачи
 app.get('/tasks', async (req, res) => {
   const tasks = await loadTasks()
-  res.json(tasks)
+  res.json(tasks);
 });
 
 // Добавить новую задачу
@@ -132,3 +132,25 @@ app.put('/tasks/:id', async (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`)
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
