@@ -13,7 +13,7 @@ function App() {
 	const [editedId, setEditedId] = useState(null)
 	const [editedText, setEditedText] = useState('')
 	
-	console.log(editedText)
+	console.log(editedText);
 
 	useEffect(()=>{
 		serverGetTasks()
@@ -122,16 +122,6 @@ function App() {
 }
 
 export default App;
-
-
-
-
-
-
-
-
-
-
 
 
 
