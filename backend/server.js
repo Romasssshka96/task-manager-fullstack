@@ -12,13 +12,6 @@ app.use(express.json())
 
 
 
-// Раздача собранного фронта
-app.use(express.static(path.join(__dirname, '../client/build')));
-
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../client/build', 'index.html'));
-});
-
 //создание рондомного числа для id
 const randomInteger =(min, max)=> {
     let rand = min + Math.random() * (max + 1 - min)
@@ -96,7 +89,7 @@ app.delete('/tasks/delete-multiple', async (req, res) => {
   let tasks = await loadTasks()
 
   tasks = tasks.filter(task => !ids.includes(task.id))
-  await saveTasks(tasks)
+  await saveTasks(tasks);
   res.json({ success: true })
 });
 
@@ -105,13 +98,13 @@ app.delete('/tasks/delete-multiple', async (req, res) => {
 //изменение таски
 app.put('/tasks/:id', async (req, res) => {
 
-  const taskId = Number(req.params.id)
+  const taskId = Number(req.params.id);
   const { text } = req.body
   
   try {
     const tasks = await loadTasks();
 
-    const index = tasks.findIndex(t => t.id === taskId)
+    const index = tasks.findIndex(t => t.id === taskId);
     if (index === -1) {
       return res.status(404).json({ error: 'Задача не найдена' })
     }
@@ -127,7 +120,12 @@ app.put('/tasks/:id', async (req, res) => {
   }
 });
 
+// Раздача собранного фронта
+app.use(express.static(path.join(__dirname, '../client/build')));
 
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../client/build', 'index.html'));
+});
 
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`)
