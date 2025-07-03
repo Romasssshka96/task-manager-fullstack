@@ -1,0 +1,120 @@
+.panel{
+    position: relative;
+    width: 100vw;
+    height: 100px;
+    background-color: beige;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+}
+.employee{
+    width: 130px;
+    position: absolute;
+    left: 10px;
+    background-color: beige;
+}
+
+.paperBin{
+    width: 60px;
+    margin-left: 70px;
+    background-color: beige;
+    cursor: pointer;
+    transition: width 0,9s ease ;
+}
+
+.paperBin:active{
+    width: 50px;
+    padding: 5px;
+}
+
+.addForm{
+    display: flex;
+    align-items: center;
+    background-color: beige;
+    
+}
+
+label{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 30px;
+    background-color: beige;
+}
+
+.addInput{
+    margin: 5px 0 5px 0;
+    width: 250px;
+    height: 30px;
+    text-align: left;
+    font-size: 17px;
+    padding: 3px;
+    background-color: beige;
+}
+
+
+.addBtn{
+    width: 100px;
+    height: 30px;
+    margin: 21px 0 0 25px;
+    font-size: 17px;
+    background-color: beige;
+    border-radius: 10px;
+    font-style: inherit;
+}
+
+.checkMark{
+    width: 60px;
+    padding: 10px;
+    background-color: beige;
+    cursor: pointer;
+    transition: width 0,9s ease;
+}
+
+.checkMark:active{
+    width: 50px;
+    padding: 15px;
+}
+
+
+.btnBlock{
+    background-color: beige;
+    display: flex;
+    align-items: center;
+
+}
+
+.btnFiltr{
+    font-size: 17px;
+    height: 30px;
+    width: 150px;
+    margin-right: 30px;
+    background-color: beige;
+}
+
+.filterBlock{
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;  
+}
+
+.container{
+  width: 100%;
+  height: 100%;
+  
+}
+
+.App{
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+
+
+

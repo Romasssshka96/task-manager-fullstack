@@ -1,0 +1,135 @@
+.imgWhatsNext{
+    width: 200px;
+    position: absolute;
+    left: 0px;
+    top: 150px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+li{
+    position: relative;
+    width: 300px;
+    min-height: 200px;
+    background-color: rgb(255, 255, 255);
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.status{
+    width: 100%;
+    height: 40px;
+    padding-top: 5px;
+    
+}
+
+.task{
+    text-align: left;
+    padding: 5px 10px 70px 5px;
+    word-wrap: break-word;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+.chooseBtn{
+    width: 80px;
+    height: 25px;
+    margin: 0 auto;
+    transform: translate(-50%);
+    background-color: rgb(255, 255, 255);
+}
+
+
+.chooseItem{
+    width: 100%;
+    height: 40px;
+    padding-top: 5px;
+    background-color: rgb(242, 85, 85);
+}
+.pancil{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    transition: width 0,9s ease;
+}
+.pancil:active{
+    width: 30px;
+    padding: 5px;
+}
+
+
+
+.listBtnGroup{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    background-color: rgb(255, 255, 255);
+}
+
+
+.editingInputBlock{
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100px;
+    margin-top: 20px;
+    padding: 5px;
+}
+.editBtnBlock{
+
+}
+
+.editingInput{
+    background-color: rgb(255, 255, 255);
+    width: 270px;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+
+.confirm{
+    background-color: rgb(255, 255, 255);
+    width: 70px;
+    height: 40px;
+}
+.cancellation{
+    background-color: rgb(255, 255, 255);
+    width: 70px;
+    height: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
